@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(241,237,247);
+    text-align: center;
+}
+
+.timer {
+    width: 700px;
+    padding: 50px;
+    margin: 0 auto;
+    color: rgb(109,97,168);
+}
+.clock span{
+    display: block;
+    font-size: 40px;
+    padding: 20px 0 50px 0;
+}
+
+.clock p, form p{
+    font-size: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(109,97,168,0.3);
+}
+
+img {
+    width: 20px;
+    margin-right: 5px;
+}
+form {
+    display: block;
+    margin: 0 auto;
+}
+
+input {
+    outline: none;
+}
+.input input{
+    width: 80px;
+    height: 50px;
+    border: 2px solid rgb(229, 217, 247);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.input p {
+    display: inline;
+    font-size: 20px;
+    margin-left: 5px;
+    line-height: 50px;
+    margin-right: 10px;
+    border: none;
+}
+
+.input p:last-child {
+    margin-right: 0;
+}
+input[type="number"]{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+input[type="button"]{
+    width: 182px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    position: static;
+}
+
+input[type="button"]:hover{
+    position:relative;
+    top: -5px;
+    opacity: 1;
+    box-shadow: 0px 5px 5px rgba(109,97,168,0.3);
+    }
+
+input[type="button"]:active{
+    opacity: 0.3;
+    position: static;
+    }
+
+#set,#start,#start-cancel{
+    background-color: rgb(109,97,168);
+    margin-right: 10px;
+    }
+#reset,#stop{
+    background-color: rgb(72, 192, 186);
+    }
+#alert {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size:10px;
+    color: red;
+    width: 385px;
+    padding-bottom: 3px;
+}
+
+.settime span{
+    font-size: 64px;
+    font-weight: bold;
+    color: rgb(109,97,168);
+}
+.settime p {
+    display: inline;
+    font-size: 20px;
+}
+
+#message {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 60px;
+    margin: 30px 0;
+    color:rgb(245, 191, 41);
+}
+
+.howtouse {
+    padding: 20px 65px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.howtouse ul {
+   /* width: 385px; */
+   margin: 10px auto 0;
+}
+.howtouse li{
+    font-size: 12px;
+    list-style: none;
+    text-align: left;
+    line-height: 22px;
+}
+.point{
+    color: #fff;
+    font-size: 10px;
+    background-color:rgb(72, 192, 186);
+    padding: 2px 4px;
+    margin-right: 5px;
+    border-radius: 55%;
+}
+
+.space {
+margin-right: 20px;
+    content:"";
+}
+/*---------------------------------------*/
+ @media(max-width:600px){
+
+    .timer {
+        width: 300px;
+        padding: 20px;
+    }
+    .clock span{
+        font-size: 29px;
+    }
+
+    .clock p, form p{
+        font-size: 10px;
+    }
+
+    img {
+        width: 15px;
+    }
+
+    .input input{
+        width: 54px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .input p {
+        font-size: 15px;
+        margin-left: 0px;
+        line-height: 40px;
+        margin-right: 5px;
+    }
+
+    input[type="number"]{
+        font-size: 20px;
+    }
+
+    input[type="button"]{
+        width: 260px;
+        font-size: 15px;
+    }
+
+    #set,#start,#start-cancel{
+        margin-right: 0px;
+        }
+
+    #alert {
+        width: 260px;
+    }
+
+    .settime span{
+        font-size: 40px;
+    }
+    .settime p {
+        font-size: 15px;
+    }
+
+    #message {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+
+    .howtouse {
+        padding: 20px 20px;
+    }
+    .howtouse ul {
+       /* width: 385px; */
+       margin: 10px auto 0;
+    }
+    .howtouse li{
+        font-size: 8px;
+        list-style: none;
+        text-align: left;
+        line-height: 14px;
+    }
+
+    .space {
+    margin-right: 0px;
+    }
+    br{
+        display: none;
+    }
+    h3{
+        font-size:20px;
+    }
+
+}
+
+

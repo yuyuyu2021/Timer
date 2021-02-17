@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>タイマー</title>
+</head>
+
+<body>
+    <div class="timer">
+        <section class="clock">
+            <p><img src="clock.png" alt="clock">現在時刻</p><span id="now"></span>
+        </section>
+
+
+        <form name="form">
+            <p><img src="timer.png" alt="timer">タイマー</p>
+            <!-- <input type="radio" name="music" value="melody" ><p class="music">メロディ</p>
+            <input type="radio" name="music" value="mute" ><p class="music">ミュート</p> -->
+
+            <section class="input">
+                <input type="number" max="23" min="0" name="hour" placeholder="00">
+                <p>時間</p>
+                <input type="number" max="59" min="0" name="minute" placeholder="00">
+                <p>分</p>
+                <input type="number" max="59" min="0" name="sec" placeholder="00">
+                <p>秒</p>
+            </section>
+            <span id="alert"></span>
+            <section class="set-button">
+                <input type="button" value="セット" id="set">
+                <input type="button" value="リセット" id="reset">
+            </section>
+
+        </form>
+
+        <section class="result">
+            <div class="settime">
+                <span id="hour">00</span>
+                <p>時間</p>
+                <span id="min">00</span>
+                <p>分</p>
+                <span id="sec">00</span>
+                <p>秒</p>
+            </div>
+            <form>
+                <input type="button" value="スタート" id="start">
+                <input type="button" value="ストップ" id="stop">
+            </form>
+        </section>
+
+        <p id="message"></p>
+
+            <section class="howtouse">
+                <h3>タイマーの使い方</h3>
+                <ul>
+                    <li><span class="point">1</span>数字を入力してセットを押すとタイマーに時間が設定されます。<br><span class="space"></span>スタートを押すまでは何回でもセットしなおせます。</li>
+                    <li><span class="point">2</span>ストップで一時停止、スタートでタイマーを再開できます。</li>
+                    <li><span class="point">3</span>タイマーが終了すると音が鳴ります。音量は端末の音量調節で変更してください。</li>
+                    <li><span class="point">4</span>スタートしてから時間をセットし直すには<br><span class="space"></span>ストップを押してからセットを押すか、リセットを押して設定し直してください。</li>
+                    <li><span class="point">5</span>リセットを押すとタイマー設定と動いているタイマーもゼロになります。</li>
+                </ul>
+            </section>
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
