@@ -1,12 +1,4 @@
 'use strict';
-
-
-// function TigilError() {
-// 	return true;
-// }
-// window.onerror = TigilError;//consoleにエラーを表示しない
-
-
 //-----------------リアルタイムの時計----------------//
 function clock(){
     const now = new Date();//現在時刻

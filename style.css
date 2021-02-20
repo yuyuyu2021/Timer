@@ -152,7 +152,7 @@ margin-right: 20px;
     content:"";
 }
 /*---------------------------------------*/
- @media(max-width:600px){
+ @media(max-width:640px){
 
     .timer {
         width: 300px;
